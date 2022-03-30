@@ -181,15 +181,15 @@ const (
 	OpEquals operator = "%s = %s"
 
 	// Prefix: Exact match on the beginning of the string, can end with anything. (Case insensitive).
-	OpExactPrefixCI operator = "~ \"%s\"*"
+	OpExactPrefixCI operator = "%s ~ \"%s\"*"
 	// Postfix: Exact match at the end of the string, can start with anything. (Case sensitive).
-	OpExactPostfixCS operator = "= *\"%s\""
+	OpExactPostfixCS operator = "%s = *\"%s\""
 	// Postfix: Exact match at the end of the string, can start with anything. (Case insensitive).
-	OpExactPostfixCI operator = "~ *\"%s\""
+	OpExactPostfixCI operator = "%s ~ *\"%s\""
 	// Infix Exact match in the middle of the string, can start and end with anything. (Case sensitive).
-	OpExactInfixCS = "= *\"%s\"*"
+	OpExactInfixCS = "%s = *\"%s\"*"
 	// Infix Exact match in the middle of the string,
-	OpExactInfixCI = "~ *\"%s\"*"
+	OpExactInfixCI = "%s ~ *\"%s\"*"
 
 	// OpNotEquals checks for inequality. Any non-exact match.
 	OpNotEquals operator = "%s != %s"
