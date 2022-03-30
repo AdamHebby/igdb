@@ -1,4 +1,4 @@
-module github.com/Henry-Sarabia/igdb/v2
+module github.com/Henry-Sarabia/igdb
 
 go 1.13
 
